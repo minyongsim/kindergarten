@@ -2,7 +2,71 @@
 @import "reset.css";
 @import "common.css";
 
-#section {padding-top: 117px;}     
+#section { padding-top:117px }
+.slideOuter { height:600px; 
+    overflow:hidden; position:relative; }
+.slideOuter .arr {
+    position:absolute; top:50%;
+    transform:translateY(-50%);
+    font-size:80px;
+    color:#fff }  
+.slideOuter .prev {left:100px}
+.slideOuter .next {right:100px}
+.slideOuter .dotBox { 
+    position:absolute; bottom:20px;
+    left:50%; 
+    transform:translateX(-50%) }
+.slideOuter .dotBox a {
+    display:inline-block;
+    width:15px; height:15px; 
+    background:#fff; 
+    opacity:0.6;
+    border-radius:50% }    
+.slideOuter .dotBox a.active {
+    opacity:1; }   
+
+.slideInner > div { 
+    height:600px;
+    background-size:cover; 
+    background-position:center; 
+    background-repeat:no-repeat; 
+    position:relative
+}
+.slideInner > div:before {
+    content:'';
+    position:absolute;
+    top:0; left:0; bottom:0; right:0;
+    background:rgba(0,0,0,0.3);
+}
+.slideInner > div:first-child { 
+    background-image:url(../images/main-cover1.min.jpg)}
+.slideInner > div:last-child { 
+    background-image:url(../images/main-cover2.min.jpg)}
+.slideInner > div > .text { 
+    position:absolute; top:50%; left:50%;
+    transform:translate(-50%, -50%);
+    text-align:center; color:#fff;
+    /* z-index:9999; */
+}
+.slideInner .text > p:first-child {
+    font-size:70px; 
+    text-shadow: -3px 3px 5px rgba(0, 0, 0, 0.5);
+}    
+.slideInner .text > p:nth-child(2) {
+    font-size:19.25px; 
+    text-shadow: -2px 2px 5px rgba(0, 0, 0, 0.5);
+    margin:20px 0px 30px } 
+.slideInner .text > p:nth-child(3) > a { display:inline-block; 
+    padding:14px 28px; font-size:14px;
+    border-radius:4px; }
+.slideInner .text > p:nth-child(3) > a:nth-child(1) { color:#fff; 
+    background:rgba(0,0,0,0.5)}
+.slideInner .text > p:nth-child(3) > a:nth-child(2) { color:#000; 
+    background:rgba(255,255,255,0.5)}    
+.slideInner .text > p:nth-child(3) > a:nth-child(1):hover { 
+    background:#ffd23c}
+.slideInner .text > p:nth-child(3) > a:nth-child(2):hover { color:#fff }
+       
 #section .title h2 { font-size:28px; color:#222;
 margin:20px 0 20px; font-weight:bold;
 text-align:center }
@@ -91,7 +155,7 @@ text-align:center }
     background:linear-gradient(to right, #ffd23c, #ffae3d);
     opacity:0; transition:all 0.5s }
 .curriBox .column > div:hover .overlay {
-    opacity:0.8 }     
+    opacity:0.8; }     
 .curriBox  .copy { position:absolute; bottom:-20px;
     left:20px; right:20px; color:#fff;
     transition:all 0.5s }  
