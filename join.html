@@ -84,8 +84,61 @@
         </div>
     </header>
 
-    <section id="joinPage">
-        회원가입페이지
+    <section id="join_page">
+        <div class="join_box row">
+            <h2>회원 가입</h2>
+            <form action="#" method=post" class="join_form">
+                <fieldset>
+                    <legend>회원가입양식</legend>
+                    <p class="info_pilsoo pilsoo_item">필수입력</p>
+                    <ul class="info_list">
+                        <li>
+                            <label for="name_lbl" class="tit_lbl pilsoo_item"> 작성자명</label>
+                            <div class="info_content">
+                                <input class="w320" type="text" id="name_lbl" placeholder="이름을 입력하세요">
+                            </div>
+                        </li>
+                        <li>
+                            <label for="password_lbl" class="tit_lbl pilsoo_item"> 비밀번호</label>
+                            <div class="info_content">
+                                <input class="w320" type="password" id="password_lbl" placeholder="비밀번호를 입력하세요">
+                            </div>
+                        </li>
+                        <li>
+                            <label for="passwordok_lbl" class="tit_lbl pilsoo_item"> 비밀번호 확인</label>
+                            <div class="info_content">
+                                <input class="w320" type="password" id="passwordok_lbl" placeholder="비밀번호를 다시 한번 입력하세요">
+                            </div>
+                        </li>
+                        <li>
+                            <label for="phone_lbl" class="tit_lbl pilsoo_item">연락처</label>
+                            <div class="info_content">
+                                <input class="w320" type="text" id="phone_lbl" placeholder='휴대폰 번호"-"없이 숫자만 입력하세요'>
+                            </div>
+                        </li>
+                        <li>
+                            <label for="email_lbl" class="tit_lbl pilsoo_item">email</label>
+                            <div class="info_content">
+                                <input class="w160" type="text" id="email_lbl"> 
+                                <span>@</span>
+                                <input class="w160" type="text" id="domain" disabled>
+                                <select id="email_choice" class="w160">
+                                    <option value="nochoice">-이메일 선택-</option>
+                                    <option value="naver.com">-네이버-</option>
+                                    <option value="daum.net">-다음-</option>
+                                    <option value="self">직접입력</option>
+                                </select>
+                            </div>
+                        </li>
+                    </ul>
+
+
+
+                </fieldset>
+            </form>
+               
+            </form>
+        </div>
     </section>
 
     <footer id="footer">
