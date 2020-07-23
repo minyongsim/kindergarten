@@ -15,7 +15,11 @@
 .topmenu .row { position:relative }    
 .topmenu { background:#f76f6f;
     color:rgba(255,255,255,0.7);
-    padding:10px 0; letter-spacing:-0.5px; }
+    padding:10px 0; letter-spacing:-0.5px;  position: relative;}
+.topmenu .search_box{position: absolute; bottom: 70%; left: 13%;}
+.topmenu .search_box fieldset {border: 1px solid #ccc; padding-right: 5px; border-radius: 5px; margin: 3px 0; }
+.topmenu .search_box input {border: none; padding: 4px 0.5em; }
+
 .topmenu a { transition:all 0.5s;}     
 .topmenu a:hover {color:rgb(255, 255, 255, 1) }    
 .topmenu .sns a { padding-right:10px; font-size:12.2px;  }
