@@ -1,6 +1,7 @@
 @charset "utf-8";
 @import "reset.css";
 @import "common.css";
+@import "rwdcommon.css";
 
 #login_page { padding:217px 0 100px }
 #login_page h2 { text-align:center; font-size:30px;
@@ -27,7 +28,4 @@
 #login_page .login_form .check { 
     margin:20px 370px 20px; 
     text-align:left; 
-}   
-join_form .btn {margin-top: 20px; text-align: center;  }
-.join_form .btn input {width: 80px; height: 30px; background: #000; color: #fff;
-border: none ; border-radius: 50px; font-size: 18px; margin: 0 20px;} 
+}    
