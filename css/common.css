@@ -71,7 +71,7 @@ float:right }
     border-left:10px solid transparent;
     border-right:10px solid transparent;
 }    
-.logoNav .depth1 > li:hover .depth2 { display:block }    
+/* .logoNav .depth1 > li:hover .depth2 { display:block }     */
 .logoNav .depth2 > li { line-height:38px;
     font-size:16px; color:#ffae3d }    
 
